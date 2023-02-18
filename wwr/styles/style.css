@@ -44,7 +44,7 @@ main section {
 }
 #background {
     height: 725px;
-    background-color: #6d597a;
+    background-color: #6D597A;
     grid-column: 1/11;
     grid-row: 4/9;
 }
@@ -93,7 +93,7 @@ nav a:hover {
     color: white;
 }
 .msg {
-    background-color: #6D597A;
+    background-color: #e56b6f;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
