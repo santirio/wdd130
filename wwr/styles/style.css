@@ -231,6 +231,7 @@ main section img {
   }
 .rivertext h3 {
     font-size: 1.5em;
+    font-family: 'IBM Plex Mono', Georgia, Times, serif;
   }
 .rivertext p {
     font-size: 0.9em;
@@ -257,6 +258,7 @@ main section img {
     font-size: 2em;
     color: #e56b6f;
     text-align: center;
+    font-family: 'IBM Plex Mono', Georgia, Times, serif;
 }
 
 @media screen and (max-width: 900px) {
