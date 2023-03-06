@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing & Safe Rafting | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Amazing & Safe Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="rivers.html">Rivers</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>   
+        </header>
+    
+        <main class="rivers_grid">
+            <!-- Tab links -->
+            <h5>Ours Rivers</h5>
+            <div class="rivers_tab">
+                <button class="tablinks" onclick="openrivers(event, 'canete')" id="defaultOpen" >Cañete</button>
+                <button class="tablinks" onclick="openrivers(event, 'majes')">Majes</button>
+                <button class="tablinks" onclick="openrivers(event, 'chili')">Chili</button>
+            </div>
+            
+            <!-- Tab content -->
+
+            <div id="canete" class="tabcontent">
+                <section class="rivertext">
+                    <h3>Cañete River</h3>
+                    <p>Lunahuana offers a range of attractions for all tastes, the best alternative 
+                        near Lima.
+                        Rafting is undoubtedly the star activity in the Lunahuaná Valley, children 
+                        take the opportunity to bathe and enjoy the tour, while adults enjoy the scenic 
+                        spectacle that the Cañete River offers us and puts their skills to the test. 
+                        Do not stay with the desire to experience this great adventure and dare to go 
+                        rafting in Lunahuana.</p>
+                </section>
+                <section class="tabimage">
+                <img class="riverimg" src="images/rcanete.jpg" alt="river Cañete">
+                </section>
+            </div>
+            
+            <div id="majes" class="tabcontent">
+                <section class="rivertext">    
+                    <h3>Majes River</h3>
+                    <p>It has the longest course of the Pacific slope with 450 km in length, 
+                        it has its origin in the vicinity of the high cruise, at the summit 
+                        of the western chain of the Andes.
+                        In its upper course it is called the Colca River, and forms an inter-Andean 
+                        valley of appreciable extension.
+                        As it descends towards the coast, it takes the name of the Majes River 
+                        and presents a narrow and deep channel, known by the name of the Colca 
+                        or Majes canyon, one of the most impressive on earth due to its depth.
+                        On the coast it is called Río Camaná and forms a narrow rice valley.
+                        It is especially renowned for its shrimp.</p>
+                </section>
+                <section class="tabimage">
+                <img class="riverimg" src="images/rmajes.jpg" alt="river Majes">
+                </section>
+            </div>
+            
+            <div id="chili" class="tabcontent">
+                <section class="rivertext">    
+                    <h3>Chili River</h3>
+                    <p>From its birth in the icy heights, through its long journey through 
+                        increasingly warm lands, until its arrival at the sea, the Chili River 
+                        has always been the main protagonist of the existence of the city of 
+                        Arequipa. Above all, it has been and is the main source of water for its 
+                        agriculture and the supply of its population; it is also an essential 
+                        resource for power generation, mining and industry in the province, 
+                        as well as being the predominant factor in the valley's ecological subsistence.</p>
+                </section>          
+                <section class="tabimage">
+                <img class="riverimg" src="images/rchili.jpg" alt="river Chili">
+                </section>
+            </div>
+
+            <script>
+                function openrivers(evt, riversName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace("active", "");
+                  }
+                  document.getElementById(riversName).style.display = "block";
+                  evt.currentTarget.className += "active";
+                 
+                }
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
+
+        </main>
+   
+        <footer>
+            <p>Amazing and Safe &copy; 2023 - Carlos Santivañez</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

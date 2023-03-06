@@ -188,6 +188,76 @@ footer .social img {
 main section img {
     box-sizing: border-box;
 }
+/* CSS for PAGE 2 - RIVERS =========================================================================== */
+/* Style the tab */
+.rivers_tab {
+    overflow: hidden;
+    border: 1px solid #fbba72;
+    background-color: #fbba72;
+
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+.rivers_tab button {
+    background-color: #6d597a;
+    color: #ccc;
+    float: left;
+    border-radius: 2px;
+    border-color: black;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 14px 40px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+.rivers_tab button:hover {
+    background-color: #e56b6f;
+    color: white;
+  }
+  
+  /* Create an active/current tablink class */
+.rivers_tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content  */
+.tabcontent {
+    display: none;
+    padding: 30px 60px; 
+    border: 5px solid black;
+    height: 500px;
+
+  }
+.rivertext h3 {
+    font-size: 1.5em;
+  }
+.rivertext p {
+    font-size: 0.9em;
+    text-align: justify;
+}
+.rivertext {
+    width: 50%; 
+    height: auto;
+    background-color: #fbba72;
+    float: left;
+  } 
+.tabimage {
+    width: 50%; 
+    height: auto;
+    background-color: #fbba72;
+    float: right;  
+  } 
+.riverimg {
+    border: 2px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6D597A;
+}
+.rivers_grid h5{
+    font-size: 2em;
+    color: #e56b6f;
+    text-align: center;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
