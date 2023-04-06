@@ -35,8 +35,8 @@ body {
   font-family: 'Rubik', Arial, Helvetica, sans-serif;
   margin: 0 auto;
   padding: 4em;
-  font-size: 18px;
-  text-align: center;
+  font-size: 16px;
+  text-align: left;
 }
 /*img {
   display: block;
@@ -139,6 +139,8 @@ header {
 .home-grid h4{
   color: #12355b;
   font-size: 1.5em ;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'IBM Plex Mono', Georgia, Times, serif;
   grid-column: 2/12;
   grid-row: 2/3;
@@ -146,7 +148,7 @@ header {
 .msg1 {
   background-color: #e6c79c;
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 0px 40px;
   grid-column: 2/7;
   grid-row: 3/4;
@@ -168,6 +170,8 @@ header {
 .home-grid h5{
   color: #12355b;
   font-size: 1.5em ;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'IBM Plex Mono', Georgia, Times, serif;
   grid-column: 2/12;
   grid-row: 5/6;
@@ -175,7 +179,7 @@ header {
 .msg2 {
   background-color: #e6c79c;
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 0px 40px;
   grid-column: 2/7;
   grid-row: 6/7;
@@ -197,6 +201,8 @@ header {
 .home-grid h6{
   color: #12355b;
   font-size: 1.5em ;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'IBM Plex Mono', Georgia, Times, serif;
   grid-column: 2/12;
   grid-row: 8/9;
@@ -204,7 +210,7 @@ header {
 .msg3 {
   background-color: #e6c79c;
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 0px 40px;
   grid-column: 2/7;
   grid-row: 9/10;
@@ -273,7 +279,7 @@ footer .social img {
 .msg_n1 {
   background-color: #e6c79c;
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 0px 40px;
   grid-column: 2/12;
   grid-row: 2/3;
@@ -336,7 +342,7 @@ footer .social img {
 .msg_i1 {
   background-color: #e6c79c;
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 0px 40px;
   grid-column: 2/12;
   grid-row: 2/3;
@@ -367,4 +373,15 @@ footer .social img {
   grid-column: 2/12;
   grid-row: 6/7;
   text-align: center;
+}
+
+/* CELL PHONE RESPONSIVE*/
+
+@media screen and (max-width: 900px) {
+
+
+  header, nav, main, footer {
+      display: block;
+  } 
+
 }
